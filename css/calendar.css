@@ -1,0 +1,871 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block; height: 100%;}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+	font-family: "Le Murmure";
+	src: local("Le Murmure") url(../le-murmure.woff) format("woff");
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+a{
+	color: #222;
+	text-decoration: none;
+	font-family: EB Garamond;
+}
+.header{
+	border-bottom: 1px solid #E5E5E5;
+	background-color: #F3F0ED;
+
+}
+.footer-container{
+	max-width: 1376px;
+	align-items: center;
+	margin: 0 auto;
+}
+.header__container{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 0px 12px 0px;
+	
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	max-width: 1376px;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.header__section{
+	display: flex;
+	align-items: center;
+	
+}
+
+
+.header__section2{
+	display: flex;
+	align-items: center;
+	
+}
+
+.header__item{
+	padding: 0px 16px;
+}
+
+
+.header__items{
+	padding: 0px 8px;
+}
+
+.link:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+.linkpassive{
+	color: rgba(34, 34, 34, 0.50);
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
+.linkpassive:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+.slash{
+	color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+.main{
+    background-color: #F3F0ED;
+}
+.main-container{
+    background-color: #F3F0ED;
+    margin: 0 auto;
+	max-width: 1376px;
+}
+.heading{
+    width: 1376px;
+    align-items: center;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.calendar-container {
+	display: flex;
+	align-items: center;
+	padding-top: 48px;
+	overflow: hidden;
+	width: 1252px; /* Фиксированная ширина */
+
+  }
+  .calendarslider{
+	display: inline-flex;
+	justify-content: space-between;
+	width: 1376px;
+  }
+.calendarik{
+	padding-top:48px;
+	color: #222;
+	font-family: EB Garamond;
+	font-size: 20px;
+	align-items: center;
+	display: flex;
+
+}
+
+  .dates-container {
+	display: flex;
+	white-space: nowrap;
+	overflow: hidden; /* Добавлено для скрытия видимости за пределами контейнера */
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+  }
+  
+  .date {
+	flex: 0 0 64px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .date.today {
+	background-color: black;
+	color: white;
+  }
+  
+  .date.past {
+    background-color: #F3F0ED; 
+	color:#A7A7A7;
+ }
+  
+  .date.future {
+	background-color: #F3F0ED;
+  }
+  
+  .arrow {
+	cursor: pointer;
+	font-size: 24px;
+	padding: 5px;
+	background-color: #eee;
+  }
+  
+  .arrow:hover {
+	background-color: #ddd;
+  }
+  body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+  }
+  
+
+  
+  .dates-container {
+	display: flex;
+	flex: 1;
+	white-space: nowrap;
+  }
+  
+  .date {
+	flex: 0 0 192px; /*ширину элемента */
+	height: 64px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s;
+
+  }
+  
+  .date:hover {
+	color:#DC5990;
+  }
+  
+  .date .date-text {
+	text-align: center;
+	font-family: EB Garamond;
+	font-size: 20px;
+  }
+  
+  .day-of-week {
+	text-align: center;
+	font-family: EB Garamond;
+	font-size: 14px;
+  }
+  
+  .arrow {
+	cursor: pointer;
+	font-size: 24px;
+	padding: 5px;
+	background-color: #eee;
+  }
+  
+  .arrow:hover {
+	background-color: #ddd;
+  }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.page2_container{
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 40px;
+	background-color:  #F3F0ED;
+	display: flex;
+	
+	
+}
+.museum-page2_header{
+	color: #222;
+	font-family: EB Garamond;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px; /* 116.667% */
+}
+
+
+
+.museum-page2_link{
+	color: #222;
+	font-family: EB Garamond;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 140% */
+	
+}
+.museum-page2_link:hover{
+color: #DC5990;
+transition:300ms;
+}
+.museum-page2_item{
+	color: #7C7B79;
+font-family: EB Garamond;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 100% */
+margin-left: 8px;
+vertical-align:top;
+}
+.content-page2_title{
+	color: #222;
+
+font-family: EB Garamond;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 116.667% */
+padding-bottom: 28px;
+}
+.mini-title{
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 140% */
+}
+.mini-subtitle{
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+.page2_content{
+	padding-left: 90px;
+	
+	flex-grow:1;
+}
+.content-page2_items{
+	display: flex;
+	justify-content: space-between;
+}
+.flex{
+	justify-content: space-between;
+}
+.content-page2_content{
+	justify-content: space-between;
+}
+
+.museum-title{
+	color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+margin-left: 24px;
+}
+.zagolovok{
+	color: #222;
+font-family: Le Murmure;
+font-size: 80px;
+font-style: normal;
+font-weight: 600;
+line-height: 88px; /* 110% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+margin-left: 24px;
+}
+.item2_content{
+	display: flex;
+}
+.narrow{
+	padding-left: 11px;
+}
+.content-page2_items{
+	margin-top: 24px;
+	padding-bottom:24px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #E5E5E5;
+}
+.content-page2_items:hover{
+	color: #DC5990;
+	transition:300ms;
+	cursor: pointer;
+	
+}
+
+.content-page2_items:not(:hover) .thumb {
+	display: none;
+	
+  }
+
+  .thumb {
+	bottom: 0;
+	pointer-events: none;
+	position: absolute;
+	left: 400px;
+  }
+.item1{
+	
+}
+.span1{
+	margin-top: 18px;
+	margin-left: 40px;
+	margin-bottom: 22px;
+	position: absolute;
+   
+ }
+.buttonchick{
+	margin-left: 24px;
+	margin-top: 109px;
+	display: inline-flex;
+	width: 200px;
+	height: 64px;
+	flex-shrink: 0;
+	font-size: 20px;
+	position: relative;
+}
+.linkBut{
+    background: url(../minskmuseum/img/button.svg); /* Путь к файлу с заменяемым рисунком  */
+    display: block; /* Ссылка как блочный элемент */
+color: #222;
+    width: 200px; /* Ширина рисунка в пикселах */
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    height: 64px; /* Высота рисунка */
+	margin-top: 35px;
+  
+}
+.linkBut:hover {
+    background: url(../minskmuseum/img/buttonhover.svg); /* Путь к файлу с заменяемым рисунком  */
+    background-position: 0 -64px; /* Смещение фона */
+    color: #FFF;
+   }
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+.footer{
+background-color: #222;
+height: 126px;
+width: 100%;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 40px;
+	padding-right: 32px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.left-content_items2{
+	color: #8D8D8D;
+font-family: EB Garamond;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 190px;
+align-content: start;
+}
+.right-content_items2{
+	color: #8D8D8D;
+font-family: EB Garamond;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 96px;
+text-align: right;
+margin-left: auto;
+}
+.linkFoot{
+	color: #F7F6F2;
+	font-family: EB Garamond;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 140% */
+}
+.left-content_items1{
+	display: flex;
+	padding-bottom: 16px;
+}
+.right-content_items1{
+	display: flex;
+	padding-bottom: 16px;
+}
+.center-footer-content{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.left-item1{
+	padding-right: 24px;
+}
+.right-item1{
+	padding-left: 24px;
+}
+.right-footer-content{
+
+}
+.linkFoot:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+
+/*//////////////////////////////////////////////////*/
+
+button{
+	display: inline-block;
+  background: #F3F0ED;
+  color: #fff;
+  padding: 12px;
+ border: #A7A7A7;
+  text-decoration: none;
+  color: #222;
+  font-family: EB Garamond;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  cursor: pointer;
+}
+/* Ваши текущие стили */
+
+.custom-image-container {
+	display: none;
+	position: fixed;
+	top: 510px;
+	left: 1200px;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+  }
+
+  @media screen and (max-width: 744px) {
+	.page2_container{
+		padding-bottom: 48px;
+	}
+	.heading img{
+		width: 680px;
+		height: 142px;
+       padding-left: 32px;
+	}
+.page2_side{
+	display: none;
+}
+.calendar-container {
+
+	padding-top: 48px;
+
+	width: 570px; /* Фиксированная ширина */
+
+  }
+
+.calendarslider{
+	width: 680px;
+	padding-left: 32px;
+}
+.custom-image-container {
+	display: none;
+	position: fixed;
+	top: 430px;
+	left: 550px;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+  }
+  .content-page2_items{
+	width: 680px;
+	height: 440px;
+	padding-left: 0px;
+  }
+  .content-page2_content{
+	padding-left: 0px;
+  }
+  .page2_content{
+	padding-left: 0px;
+  }
+.zagolovok{
+	color: #222;
+font-family: Le Murmure;
+font-size: 62px;
+font-style: normal;
+font-weight: 600;
+line-height: 72px; /* 116.129% */
+letter-spacing: 0.62px;
+text-transform: uppercase;
+}
+
+.footer{
+	height: 174px;
+}
+.left-content_items1{
+	display: flex;
+	flex-direction: column;
+}
+.left-item1{
+	padding-bottom: 6px;
+}
+.right-item1{
+	padding-bottom: 6px;
+}
+.right-content_items1{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0px;
+}
+.footer-container{
+	
+}
+.left-content_items1{
+	padding-bottom: 5px;
+}
+  }
+
+
+
+  *{
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+#burger, [for=burger]{
+    display: none;
+}
+ @media screen and (max-width: 320px) {
+
+	button{
+		display: inline-block;
+	  background: #F3F0ED;
+	  color: #fff;
+	
+	 border: #A7A7A7;
+	  text-decoration: none;
+	  color: #222;
+	  font-family: EB Garamond;
+	  font-size: 10px;
+	  padding-top: 24px;
+	}
+
+	.custom-image-container {
+		display: none;
+		position: fixed;
+		top: 300px;
+		left: 100px;
+		transform: translate(-50%, -50%);
+		z-index: 1000;
+		width: 200px;
+	  }
+.calendarslider{
+	width: 320px;
+}
+.calendarik{
+	padding-top:0px;
+}
+
+.heading img {
+	width: 288px;
+	height: 60px;
+}
+.calendar-container{
+	padding-top: 16px;
+	height: 50px;
+	width: 238px;
+}
+.calendarslider{
+	height: 50px;
+	padding-left: 16px;
+}
+
+/*///////////////*/
+
+
+  .date.today {
+	background-color: black;
+	color: white;
+	font-size: 10px;
+	width: 62px;
+  }
+  
+  .date.past {
+    background-color: #F3F0ED; 
+	color:#A7A7A7;
+	font-size: 10px;
+	width: 62px;
+ }
+  
+  .date.future {
+	background-color: #F3F0ED;
+	font-size: 10px;
+	width: 62px;
+  }
+ 
+  .date {
+	flex: 0 0 62px; /*ширину элемента */
+	height: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 10px;
+  }
+    
+  .date .date-text {
+	text-align: center;
+	font-family: EB Garamond;
+	font-size: 10px;
+  }
+  
+  .day-of-week {
+	text-align: center;
+	font-family: EB Garamond;
+	font-size: 8px;
+  }
+.content-page2_items{
+	display: flex;
+	flex-direction: column;
+	height: 636px;
+}
+.item1{
+padding-bottom: 8px;
+}
+.item1 img{
+	height: 377px;
+	width: 288px;
+}
+.page2_container{
+	padding-left: 16px;
+}
+  .zagolovok{
+	margin-left: 0px;
+	color: #222;
+text-align: center;
+font-family: Le Murmure;
+font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.38px;
+text-transform: uppercase;
+  }
+  .museum-title{
+	color: #222;
+	margin-left: 0px;
+	text-align: center;
+	font-family: EB Garamond;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;	
+}
+.item2{
+	width: 288px;
+}
+
+.buttonchick{
+	margin-left: 60px;
+	margin-top: 0px;
+}
+
+.footer-content{
+	font-size: 20;
+}
+.footer{
+	height: 200px;
+}
+.center-footer-content{
+	display: none;
+}
+
+.left-content_items1{
+	display: flex;
+	flex-direction: column;
+}
+.left-item1{
+	padding-bottom: 6px;
+}
+.right-item1{
+	padding-bottom: 6px;
+}
+.right-content_items1{
+	display: flex;
+	flex-direction: column;
+}
+.footer-content{
+	padding-left: 10px;
+}
+
+  }
+  
+
+  *{
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+#burger, [for=burger]{
+    display: none;
+}
+
+
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container{
+        width: 80%;
+    }          
+    [for=burger]{
+        display: block;
+        padding-top: 32px;
+		padding-left: 273px;
+        width: 30px;
+        text-align: center;
+        right: 20px;
+        top: 32px;
+    }
+    [for=burger]::before{
+        content: url(../minskmuseum/img/icons/burger.svg);
+	
+    }
+    nav{
+        display: none;
+        position: fixed;
+        top: 0;
+		left: 75px;
+        margin-top: 32px;
+        background: #F3F0ED;
+        width: 80%;
+        user-select: none;
+        height:250px;
+		width: 190px;
+		height: 162px;
+		z-index: 1;
+    }
+	.header__item{
+		margin-bottom: 12px;
+	}
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    #burger:checked + label + nav{
+        display: block;
+        animation: show .5s ease;
+    }
+    #burger:checked +[for=burger]::before{
+        content: url(../minskmuseum/img/icons/close.svg);
+    }
+
+.header__section{
+    display: flex;
+    flex-direction: column;
+	align-items:flex-start;
+}
+.header__section2{
+ padding-left: 10px;
+ display: flex;
+}
+.headerlogo{
+    display: none;
+}
+.header__container{
+    display: flex;
+    flex-direction: column;
+	align-items:flex-start;
+
+	border-bottom: 1px #E5E5E5;
+}
+.header{
+	width: 320px;
+	height: 84px;
+	border-bottom: 1px #E5E5E5;
+	background-image: url('../minskmuseum/img/Group 228.svg');
+	background-position: 10px 15px;
+	background-repeat: no-repeat;
+	}
+
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

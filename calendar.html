@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Музеи Минска</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<link rel="stylesheet" href="javascript/swiper-bundle.min.js">
+        <link rel="stylesheet" href="css/calendar.css">
+       
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    </head>
+
+    <body>
+        
+        <div class="wrapper">
+            <div class="header">
+                <input type="checkbox" id="burger">
+                <label for="burger"></label>
+                <nav>
+                <div class="header__container">
+            <div class="header__section">
+                <div class="header__item headerlogo"><a href="../minskmuseum/main.html" class="link"><img src="../minskmuseum/img/Group 228.svg" alt=""></a></div>
+                <div class="header__item headerButton"><a href="../minskmuseum/calendar.html" class="link">Календарь событий</a></div>
+                
+
+                    <div class="header__item headerButton"><a href="../minskmuseum/museums.html" class="link">Музеи Минска</a></div>
+                        <div class="header__item headerButton"><a href="../minskmuseum/newsandevents.html" class="link">Новости</a></div>
+            </div>
+            <div class="header__section2">
+                <div class="header__items headerButton"><a href="#" class="link">Ру</a></div>
+                <span class="slash">/</span>
+                <div class="header__items headerButton"><a href="#" class="linkpassive">En</a></div>
+                    <div class="header__items headerButton"><a href="#" class="link"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0705 2C6.61329 2 3 5.59961 3 10.0399C3 14.4803 6.61329 18.0799 11.0705 18.0799C12.8303 18.0799 14.4586 17.5188 15.7848 16.5664L21.0815 21.843C21.2916 22.0523 21.6323 22.0523 21.8424 21.843C22.0525 21.6337 22.0525 21.2943 21.8424 21.085L16.6175 15.8799C18.1716 14.4144 19.141 12.34 19.141 10.0399C19.141 5.59961 15.5277 2 11.0705 2ZM4.07607 10.0399C4.07607 6.19165 7.20759 3.07199 11.0705 3.07199C14.9334 3.07199 18.065 6.19165 18.065 10.0399C18.065 13.8882 14.9334 17.0079 11.0705 17.0079C7.20759 17.0079 4.07607 13.8882 4.07607 10.0399Z"/>
+                        </svg>
+                        </a></div>
+                     
+            
+        </div>
+             </div> 
+            </nav>
+        </div>
+            <main class="main">
+                <div class="main-container">
+                    <div class="heading"><img src="../minskmuseum/img/calendar/calendar.svg"></div>
+                    <div class="calendarslider">
+
+                    <div class="calendar-container">
+                        <div class="arrow left-arrow"> <img src="../minskmuseum/img/calendar/narrowleft.svg"> </div>
+                        <div class="dates-container" id="datesContainer">
+                          <!-- Ваши элементы дат будут здесь -->
+                          <div class="date" onclick="handleDateClick(this)">
+                            <div class="date-text">12 сентября</div>
+                            <div class="day-of-week">понедельник</div>
+                          </div>
+                          <div class="date" onclick="handleDateClick(this)">
+                            <div class="date-text">13 сентября</div>
+                            <div class="day-of-week">вторник</div>
+                          </div>
+                          <!-- Добавьте остальные элементы дат здесь -->
+                        </div>
+                        <div class="arrow right-arrow"><img src="../minskmuseum/img/calendar/narrowright.svg"></div>
+                      </div>
+                      <div class="calendarik">
+                        <button id="show-calendar-button"  onclick="toggleImage()">Календарь</button>
+                        <div id="image-container" class="custom-image-container">
+                            <img id="displayed-image" src="../minskmuseum/img/calendar/kal.svg" alt="Displayed Image">
+                          </div>
+                        
+                      </div>
+                    </div>
+
+
+                    <div class="page2">
+                        <div class="page2_container">
+                            <aside class="page2_side">
+                                <nav class="page2_museum">
+                                    <div class="museum-page2_header">Музеи</div>
+                                    <div class="museum-page2_body">
+                                        <ul class="museum-page2_list">
+                                            <li><a href="" class="museum-page2_link">Все<a class="museum-page2_item">99</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Истории ВОВ<a class="museum-page2_item">7</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Художественный<a class="museum-page2_item">4</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Центр современных искусств<a class="museum-page2_item">17</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Исторический<a class="museum-page2_item">12</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Янки Купалы<a class="museum-page2_item">3</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Максима Богдановича<a class="museum-page2_item">8</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">I съезда РСДРП<a class="museum-page2_item">1</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Валунов<a class="museum-page2_item">1</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Истории города Минска<a class="museum-page2_item">99</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Кино<a class="museum-page2_item">1</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Кота<a class="museum-page2_item">22</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Природы и экологии<a class="museum-page2_item">1</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Азгура<a class="museum-page2_item">3</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Авиационной техники<a class="museum-page2_item">6</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Аливария<a class="museum-page2_item">2</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Экспериментус<a class="museum-page2_item">5</a></a></li> 
+                                            <li><a href="" class="museum-page2_link">Архитектуры и быта<a class="museum-page2_item">3</a></a></li> 
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </aside>
+                            <div class="page2_content">
+                               
+                                <div class="content-page2_content">
+                                    <div class="content-page2_items">
+                                        <div class="item1"><img src="../minskmuseum/img/calendar/salvadordali.svg"> </div>
+                                        <div class="item2">
+                                            <div class="museum-title">
+                                                19:00–20:30
+                                            </div>
+                                            <div  class="zagolovok">
+                                                Священное писание Сальвадора Дали
+                                            </div>
+                                            <div class="museum-title">
+                                                Спецпроект в центре современных искусств, 25 сентября — 9 января
+                                            </div>
+                                            <div class="buttonchick">
+                                                <a href="#" class="linkBut">
+                                                <span class="span1">Купить билеты</span></a>
+                                                </div>  
+                                        </div>
+                                    </div>
+
+                                    <div class="content-page2_items">
+                                        <div class="item1"><img src="../minskmuseum/img/calendar/vangogh.svg"> </div>
+                                        <div class="item2">
+                                            <div class="museum-title">
+                                                19:00–21:00
+                                            </div>
+                                            <div  class="zagolovok">
+                                                загадочный мир Ван Гог и Гоген
+                                            </div>
+                                            <div class="museum-title">
+                                                Выставка в галерее «Артель», 25 сентября — 28 декабрь
+                                            </div>
+                                            <div class="buttonchick">
+                                                <a href="#" class="linkBut">
+                                                <span class="span1">Купить билеты</span></a>
+                                                </div>  
+                                        </div>
+                                    </div>
+
+                                    <div class="content-page2_items">
+                                        <div class="item1"><img src="../minskmuseum/img/calendar/ieronimbosh.svg"> </div>
+                                        <div class="item2">
+                                            <div class="museum-title">
+                                                19:30
+                                            </div>
+                                            <div  class="zagolovok">
+                                                мистические Тайны Иеронима Босха
+                                            </div>
+                                            <div class="museum-title">
+                                                Выставка в художественном музее, 25 сентября — 26 декабрь
+                                            </div>
+                                            <div class="buttonchick">
+                                                <a href="../minskmuseum/event.html" class="linkBut">
+                                                <span class="span1">Купить билеты</span></a>
+                                                </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </main>
+
+
+           <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="left-footer-content">
+                        <div class="left-content_items1">
+                            <div class="left-item1"><a href="#" class="linkFoot">Календарь событий</a></div>
+                            <div class="left-item1"><a href="#" class="linkFoot">Музеи</a></div>
+                            <div class="left-item1"><a href="#" class="linkFoot">Новости</a></div>
+                        </div>
+                        <div class="left-content_items2">
+                            <div class="left-item2">Поддержка и сотрудничество minsk.museums@mm.by</div>
+                        </div>
+                    </div>
+                    <div class="center-footer-content">
+                        <img class="WhiteLogo" src="../minskmuseum/img/WhiteLogo.svg">
+                    </div>
+                    <div class="right-footer-content">
+                        <div class="right-content_items1">
+                            <div class="right-item1"><a href="#" class="linkFoot">Телеграм</a></div>
+                            <div class="right-item1"><a href="#" class="linkFoot">Вконтакте</a></div>
+                            <div class="right-item1"><a href="#" class="linkFoot">Инстаграм</a></div>
+                        </div>
+                        <div class="right-content_items2">
+                            <div class="right-item2">Музеи Минска © 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="../minskmuseum/javascript/swiper-bundle.min.js"></script>
+        <script src="../minskmuseum/javascript/calendar.js"></script>
+    </body>
+</html> 

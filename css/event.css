@@ -1,0 +1,637 @@
+
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.link1{
+	color: #222;
+font-family: EB Garamond;
+text-decoration: none;
+}
+.header-container{
+    display: flex;
+	justify-content: space-between;
+	padding: 12px 0px 12px 0px;
+	
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	max-width: 1376px;
+	align-items: center;
+    margin: 0 auto;
+
+}
+.header{
+
+    background: linear-gradient(to right, #847764 0%, #847764 47%, rgb(255, 255, 255) 47%, rgb(255, 255, 255) 100%);
+}
+.header__section{
+	display: flex;
+	align-items: center;
+  
+}
+.header__section2{
+	display: flex;
+	align-items: center;
+  
+}
+.header__item{
+	padding: 0px 16px;
+    
+}
+
+
+.header__items{
+	padding: 0px 8px;
+}
+
+.link:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+.linkpassive{
+	color: rgba(34, 34, 34, 0.50);
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+text-decoration: none;
+}
+.linkpassive:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+.slash{
+	color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+
+
+
+.main-page{
+    display: flex;
+    overflow: auto;
+    height:788px;
+}
+.main-page_left{
+position: sticky;
+top: 0;
+align-self: flex-start;
+
+}
+.left-content{
+    width: 706px;
+    height: 788px;
+    background-color: #847764;
+}
+.uptitle{
+    color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.title{
+    color: #222;
+font-family: Le Murmure;
+font-size: 80px;
+font-style: normal;
+font-weight: 600;
+line-height: 88px; /* 110% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+margin-top: 16px;
+margin-bottom: 24px;
+}
+.main-text{
+    color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+margin-bottom: 0px;
+}
+.right-content{
+    margin-left: 24px;
+    width: 732px;
+}
+.uptitle{
+    color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+.title{
+    color: #222;
+font-family: Le Murmure;
+font-size: 80px;
+font-style: normal;
+font-weight: 600;
+line-height: 88px; /* 110% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+width: 608px;
+}
+
+.p1{
+    color: #FFF;
+    text-align: center;
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    margin-bottom: 4px;
+    margin-top: 25px;
+}
+.p2{
+    color: #FFF;
+text-align: center;
+font-family: EB Garamond;
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+margin-top: 0px;
+margin-bottom: 24px;
+}
+.button{
+
+}
+.link{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.pic{
+    margin-left: 158px;
+    margin-top: 50px;
+}
+.span1{
+   margin-top: 18px;
+   margin-left: 40px;
+   margin-bottom: 22px;
+   position: absolute;
+  
+}
+.linkBut{
+    background: url(../minskmuseum/img/button.svg); /* Путь к файлу с заменяемым рисунком  */
+    display: block; /* Ссылка как блочный элемент */
+color: #222;
+    width: 200px; /* Ширина рисунка в пикселах */
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    height: 64px; /* Высота рисунка */
+    margin-left: 254px;
+}
+.linkBut:hover {
+    background: url(../minskmuseum/img/buttonhover.png); /* Путь к файлу с заменяемым рисунком  */
+    background-position: 0 -64px; /* Смещение фона */
+    color: #FFF;
+
+   }
+
+/*////////////////////////////////////////////////////////////////////////////////////////////СЛАДЕР*/
+.swiper-wrapper{
+   box-sizing: content-box;
+}
+
+.swiper-slide{
+   display: flex;
+}
+.swiper{
+    display: flex;
+    margin: 24px;
+    max-width: 700px;
+    width: 100%;
+    height: 500px;
+}
+.image-slider img{
+    width: 100%;
+    height: 100%;
+} 
+.swiper-button-prev{
+  background-image: url(../minskmuseum/img/event/leftnarrow.svg);
+  background-repeat: no-repeat;
+background-position: center;
+bottom: 50px;
+margin-top: 208px;
+}
+.swiper-button-prev::after{
+    display: none;
+}
+.swiper-button-next{
+    background-image: url(../minskmuseum/img/event/rightnarrow.svg);
+    background-repeat: no-repeat;
+  background-position: center;
+  bottom: 50px;
+  margin-top: 208px;
+  margin-right: 570px;
+  }
+  .swiper-button-next::after{
+      display: none;
+  }
+.swiper-pagination-fraction{
+    font-size: 20px;
+    color: #222;
+    width:126px;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////СЛАДЕР*/
+
+.right-content_container{
+   padding-bottom: 48px;
+}
+.container_item{
+    display: flex;
+    justify-content: space-between;
+    max-width: 676px;
+    margin-left: 24px;
+   
+}
+.container-item2{
+display: flex;
+justify-content: space-between;
+}
+.text{
+    color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+margin-top: 4px;
+margin-bottom: 4px;
+margin-left: 12px;
+margin-right: 12px;
+}
+.item1{
+    color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+.item2{
+    color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: italic;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+
+
+.titlemini{
+    color: #222;
+font-family: Le Murmure;
+font-size: 56px;
+font-style: normal;
+font-weight: 600;
+line-height: 56px; /* 100% */
+letter-spacing: 0.56px;
+text-transform: uppercase;
+}
+
+.footer-container{
+	max-width: 1376px;
+	align-items: center;
+	margin: 0 auto;
+}
+.footer{
+    background-color: #222;
+    height: 126px;
+    width: 100%;
+  
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 32px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .left-content_items2{
+        color: #8D8D8D;
+    font-family: EB Garamond;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 190px;
+    align-content: start;
+    }
+    .right-content_items2{
+        color: #8D8D8D;
+    font-family: EB Garamond;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 96px;
+    text-align: right;
+    margin-left: auto;
+    }
+    .linkFoot{
+        color: #F7F6F2;
+        font-family: EB Garamond;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 140% */
+        text-decoration: none;
+    }
+    .left-content_items1{
+        display: flex;
+        padding-bottom: 16px;
+    }
+    .right-content_items1{
+        display: flex;
+        padding-bottom: 16px;
+    }
+    .center-footer-content{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .left-item1{
+        padding-right: 24px;
+    }
+    .right-item1{
+        padding-left: 24px;
+    }
+    .right-footer-content{
+    
+    }
+    .linkFoot:hover{
+        color: #DC5990;
+        transition:300ms;
+    }
+    *{
+        box-sizing: border-box;
+        /* border: 1px solid #000; */
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+    }
+    
+    #burger, [for=burger]{
+        display: none;
+    }
+    
+    
+    
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    /*/////////////////////////////////////*/
+    @media screen and (max-width: 500px) {
+        .container{
+            width: 80%;
+        }          
+        [for=burger]{
+            display: block;
+            padding-top: 32px;
+            padding-left: 273px;
+            width: 30px;
+            text-align: center;
+            right: 20px;
+            top: 32px;
+        }
+        [for=burger]::before{
+            content: url(../minskmuseum/img/icons/burger.svg);
+        
+        }
+        nav{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 75px;
+            margin-top: 32px;
+            background: #F3F0ED;
+            width: 80%;
+            user-select: none;
+            height:250px;
+            width: 190px;
+            height: 162px;
+            z-index: 1;
+        }
+        .header__item{
+            margin-bottom: 12px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #burger:checked + label + nav{
+            display: block;
+            animation: show .5s ease;
+        }
+        #burger:checked +[for=burger]::before{
+            content: url(../minskmuseum/img/icons/close.svg);
+        }
+    
+    .header__section{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .header__section2{
+     padding-left: 10px;
+    }
+    .headerlogo{
+        display: none;
+    }
+    .header__container{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    
+        border-bottom: 1px #E5E5E5;
+    }
+    .header{
+        width: 320px;
+        height: 84px;
+        border-bottom: 1px #E5E5E5;
+        background-image: url('../minskmuseum/img/Group 228.svg');
+        background-position: 10px 15px;
+        background-repeat: no-repeat;
+        }
+    
+    }
+    @media (max-width: 320px) {
+        /* ЭТО ДЛЯ ТЕЛЕФОНЧИКА ПИПИ ПУПУПУППУППУПУПУПУПУПУПУПП*/
+       .main-page{
+display: flex;
+flex-direction: column;
+       }
+       .main-page_left{
+        position: relative;
+        width: 320px;
+       }
+       .pic{
+        width: 224px;
+        margin-left: 48px;
+       }
+       .left-content{
+        width: 320px;
+        height: 550px;
+       }
+       .p1{
+        font-size: 12px;
+       }
+       .p2{
+        font-size: 12px;
+       }
+       .title{
+        font-size: 38px;
+        width: 288px;
+        font-weight: 600;
+line-height: normal;
+letter-spacing: 0.38px;
+       }
+       .main-page_right{
+        width: 320px;
+       }
+       .main-page_left{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 320px;
+       }
+       .main-text{
+        width: 288px;
+        color: #222;
+font-family: EB Garamond;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+font-family: EB Garamond;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+       }
+       .image-slider{
+        height: 250px;
+       }
+       .swiper-wrapper{
+        height: 250px;
+       }
+       .swiper{
+        height: 250px;
+       }
+       .main-page{
+        width: 320px;
+       }
+       .image-slider img{
+        width: 288px;
+       }
+       .linkBut{
+        background: url(../minskmuseum/img/button.svg); /* Путь к файлу с заменяемым рисунком  */
+        display: block; /* Ссылка как блочный элемент */
+    color: #222;
+        width: 200px; /* Ширина рисунка в пикселах */
+        font-family: EB Garamond;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
+        height: 64px; /* Высота рисунка */
+        margin-left: 60px;
+    }
+    /*//////////////////////////////////*/
+    .footer-content{
+        font-size: 20;
+    }
+    .footer{
+        height: 200px;
+    }
+    .center-footer-content{
+        display: none;
+    }
+    
+    .left-content_items1{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-item1{
+        padding-bottom: 6px;
+    }
+    .right-item1{
+        padding-bottom: 6px;
+    }
+    .right-content_items1{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content{
+        padding-left: 10px;
+    }
+    /*//////////////////////////////*/
+    .page2_content{
+        padding-left: 10px;
+    padding-top: 200px;
+    }
+    .content-page2_title{
+        padding-bottom: 0px;
+        font-size: 18px;
+    }
+    .page2_container{
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .mini-title{
+        font-size: 16px;
+    }
+    .mini-subtitle{
+        font-size: 16px;
+    }
+    .museum-title{
+        font-size: 16px;
+    }
+    .museum-cost{
+        font-size: 16px;
+        display: none;
+    }
+    .content-page2-item1{}
+    .content-page2_items{
+        display: flex;
+    }
+    .item2_content{
+        display: none;
+    }
+    .content-page2-item2{
+        align-items: center;
+    }
+      }
+    
+    

@@ -1,0 +1,649 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block; height: 100%;}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+	font-family: "Le Murmure";
+	src: local("Le Murmure") url(../le-murmure.woff) format("woff");
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+a{
+	color: #222;
+	text-decoration: none;
+	font-family: EB Garamond;
+}
+.header{
+	border-bottom: 1px solid #E5E5E5;
+	background-color: #F3F0ED;
+
+}
+.footer-container{
+	max-width: 1376px;
+	align-items: center;
+	margin: 0 auto;
+}
+.header__container{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 0px 12px 0px;
+	
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	max-width: 1376px;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.header__section{
+	display: flex;
+	align-items: center;
+	
+}
+.header__section2{
+	display: flex;
+	align-items: center;
+	
+}
+.header__item{
+	padding: 0px 16px;
+}
+
+
+.header__items{
+	padding: 0px 8px;
+}
+
+.link:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+.linkpassive{
+	color: rgba(34, 34, 34, 0.50);
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
+.linkpassive:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+.slash{
+	color: #222;
+font-family: EB Garamond;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+
+
+
+.main{
+	flex: 1 1 auto;
+	background-color: #F3F0ED;
+	border-bottom: 1px solid #E5E5E5;
+}
+.container_main{
+	margin: 0 auto;
+	max-width: 1376px;
+}
+.heading{
+	background-color: #F3F0ED;
+	border-bottom: 1px solid #E5E5E5;
+	display: flex;
+	justify-content: center;
+	height: 398px;
+}
+.museiminska{
+	width: 1376px;
+}
+
+.museiminska{
+	margin-bottom: 8px;
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
+.museum:hover{
+color: #DC5990;
+transition: 300ms;
+}
+.museum-two{
+	line-height: 64px;
+  }
+ 
+  /* Acordeon styles */
+  .museum {
+	position: relative;
+	margin-bottom: 1px;
+	width: 100%;
+	overflow: hidden;
+	color: #222;
+font-family: Le Murmure;
+font-size: 56px;
+font-style: normal;
+font-weight: 600;
+line-height: 64px; /* 114.286% */
+letter-spacing: 0.56px;
+text-transform: uppercase;
+  }
+  .museum input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+  }
+  .museum label {
+	position: relative;
+	display: block;
+	background: #F3F0ED;
+	font-weight: bold;
+	line-height: 3;
+	cursor: pointer;
+  }
+  .blue label {
+	background: #2980b9;
+  }
+  .museum-content {
+	max-height: 0;
+	overflow: hidden;
+	background: #F3F0ED;
+	-webkit-transition: max-height .35s;
+	-o-transition: max-height .35s;
+	transition: max-height .35s;
+  }
+  .blue .museum-content {
+	background: #3498db;
+  }
+  .museum-content p {
+	margin: 1em;
+  }
+  /* :checked */
+  .museum input:checked ~ .museum-content {
+	max-height: 100vh;
+  }
+  
+  /* Icon */
+  .museum label::after {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	line-height: 3;
+	text-align: center;
+	-webkit-transition: all .35s;
+	-o-transition: all .35s;
+	transition: all .35s;
+  }
+  .museum input[type=checkbox] + label::after {
+	content: "+";
+  }
+  .museum input[type=radio] + label::after {
+	content: "\25BC";
+  }
+  .museum input[type=checkbox]:checked + label::after {
+	transform: rotate(315deg);
+  }
+  .museum input[type=radio]:checked + label::after {
+	transform: rotateX(180deg);
+  }
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.container-right{
+	display: block;
+  }
+  .zagolovok{
+	color: #222;
+  font-family: Le Murmure;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 114.286% */
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  width: 676px;
+  height: 128px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  }
+  .text{
+	margin-left: 24px;
+	color: #222;
+	font-family: EB Garamond;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 140% */
+	text-transform:capitalize;
+  }
+  .texts{
+	text-transform:capitalize;
+	margin-left: 24px;
+	margin-bottom: 84px;
+	color: #222;
+	font-family: EB Garamond;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 140% */
+  }
+  .slider {
+	width: 828px;
+	height: 424px;
+	display: flex;
+  }
+  
+  .main-slide {
+	width: 676px;
+	height: 424px;
+  }
+  
+  /* остальной код без изменений */
+  .small-slides {
+	float: left;
+	display: flex;
+	align-items: flex-end;
+  }
+  
+  .small-slide {
+	cursor: pointer;
+   margin-left: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	transition: opacity 0.3s ease-in-out; /* добавлен эффект плавного перехода */
+  }
+  
+  .small-slide:hover {
+	opacity: 0.7; /* уменьшаем прозрачность при наведении */
+  }
+  
+  .small-slide img {
+	width: 210px;
+	height: 136px;
+  }
+  
+/*//////////////////////////////////////////////////////////////////////////////*/
+.footer{
+background-color: #222;
+height: 126px;
+width: 100%;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 40px;
+	padding-right: 32px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.left-content_items2{
+	color: #8D8D8D;
+font-family: EB Garamond;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 190px;
+align-content: start;
+}
+.right-content_items2{
+	color: #8D8D8D;
+font-family: EB Garamond;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 96px;
+text-align: right;
+margin-left: auto;
+}
+.linkFoot{
+	color: #F7F6F2;
+	font-family: EB Garamond;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 140% */
+}
+.left-content_items1{
+	display: flex;
+	padding-bottom: 16px;
+}
+.right-content_items1{
+	display: flex;
+	padding-bottom: 16px;
+}
+.center-footer-content{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.left-item1{
+	padding-right: 24px;
+}
+.right-item1{
+	padding-left: 24px;
+}
+.right-footer-content{
+
+}
+.linkFoot:hover{
+	color: #DC5990;
+	transition:300ms;
+}
+ /*/////////////////////////////////////*/
+ @media screen and (max-width: 744px) {
+	.museiminska{
+		width: 704px;
+		height: 159px;
+	}
+	.heading{
+		height: 189px;
+	}
+	.container_main{
+width: 704px;
+	}
+	.museum{
+		font-style: normal;
+		font-weight: 600;
+		line-height: 20px; /* 109.375% */
+		letter-spacing: 0.64px;
+		text-transform: uppercase;
+}
+
+.main-slide img{
+	width: 341px;
+	height: 214px;
+}
+.small-slide img{
+	width: 105px;
+}
+.museum{
+width: 680px;
+}
+.small-slides{
+	height: 112px;
+	width: 320px;
+}
+.small-slide{
+	width: 105px;
+	margin-left: 8px;
+}
+.main-slide{
+	width: 341px;
+	height: 214px;
+}
+.zagolovok{
+font-size: 36px;
+font-weight: 600;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.36px;
+width: 370px;
+height: 80px;
+margin-bottom: 0px;
+}
+.text{
+	font-size: 16px;
+}
+.texts{
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+.container-right{
+	width:345px;
+}
+.museum {
+
+	font-size: 48px;
+	
+	  }
+	  .slider{
+		height: 240px;
+	  }
+/*////*/
+.footer{
+height: 174px;
+}
+.left-content_items1{
+display: flex;
+flex-direction: column;
+}
+.left-item1{
+padding-bottom: 6px;
+}
+.right-item1{
+padding-bottom: 6px;
+}
+.right-content_items1{
+display: flex;
+flex-direction: column;
+padding-bottom: 0px;
+}
+.footer-container{
+
+}
+.left-content_items1{
+padding-bottom: 5px;
+}
+
+/*/////*/
+}
+
+
+
+*{
+	box-sizing: border-box;
+	/* border: 1px solid #000; */
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+
+#burger, [for=burger]{
+	display: none;
+}
+
+
+
+@keyframes show {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 500px) {
+	.container{
+		width: 80%;
+	}          
+	[for=burger]{
+		display: block;
+		padding-top: 32px;
+		padding-left: 273px;
+		width: 30px;
+		text-align: center;
+		right: 20px;
+		top: 32px;
+	}
+	[for=burger]::before{
+		content: url(../minskmuseum/img/icons/burger.svg);
+	
+	}
+	nav{
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 75px;
+		margin-top: 32px;
+		background: #F3F0ED;
+		width: 80%;
+		user-select: none;
+		height:250px;
+		width: 190px;
+		height: 162px;
+		z-index: 1;
+	}
+	.header__item{
+		margin-bottom: 12px;
+	}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	#burger:checked + label + nav{
+		display: block;
+		animation: show .5s ease;
+	}
+	#burger:checked +[for=burger]::before{
+		content: url(../minskmuseum/img/icons/close.svg);
+	}
+
+.header__section{
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+.header__section2{
+ padding-left: 10px;
+ display: flex;
+}
+.headerlogo{
+	display: none;
+}
+.header__container{
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+
+	border-bottom: 1px #E5E5E5;
+}
+.header{
+	width: 320px;
+	height: 84px;
+	border-bottom: 1px #E5E5E5;
+	background-image: url('../minskmuseum/img/Group 228.svg');
+	background-position: 10px 15px;
+	background-repeat: no-repeat;
+	}
+
+}
+
+
+/*/////////////////////////////////////*/
+@media screen and (max-width: 320px) {
+	.museiminska{
+		width: 300px;
+		height: 67px;
+	}
+	.heading{
+		height: 75px;
+	}
+	.container_main{
+width: 300px;
+	}
+	.museum{
+		font-style: normal;
+		font-weight: 600;
+		line-height: 20px; /* 109.375% */
+		letter-spacing: 0.64px;
+		text-transform: uppercase;
+}
+
+.main-slide img{
+	width: 300px;
+	height: 188px;
+}
+
+.small-slide img{
+	width: 97px;
+}
+.museum{
+width: 680px;
+}
+.small-slides{
+	height: 112px;
+	width: 320px;
+}
+.small-slide{
+	width: 97px;
+	margin-left: 0px;
+	margin-right: 4px;
+}
+.main-slide{
+	width: 341px;
+	height: 188px;
+}
+.zagolovok{
+display: none;
+}
+.text{
+	font-size: 16px;
+	margin-left: 0px;
+}
+.texts{
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.container-right{
+	width:345px;
+}
+.museum {
+	font-size: 24px;
+width: 320px;
+	  }
+	  .slider{
+	height: 350px;
+		display: flex;
+		flex-direction: column;
+	  }
+/*////*/
+/*///////////////////////////////////////////////////////////////*/
+.footer-content{
+font-size: 20;
+}
+.footer{
+height: 200px;
+}
+.center-footer-content{
+display: none;
+}
+
+.left-content_items1{
+display: flex;
+flex-direction: column;
+}
+.left-item1{
+padding-bottom: 6px;
+}
+.right-item1{
+padding-bottom: 6px;
+}
+.right-content_items1{
+display: flex;
+flex-direction: column;
+}
+.footer-content{
+padding-left: 10px;
+}
+/**/
+}
